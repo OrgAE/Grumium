@@ -1,2 +1,2 @@
-# Grumium <img align="right" width="64" height="64" src="logo.png">
+# Grumium <img align="right" width="100" height="100" src="Documents/logo.png">
 An open source Banking and Insurance framework.
