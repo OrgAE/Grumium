@@ -1,2 +1,2 @@
 # Grumium
-An open source Banking and Insurance framework
+An open source Banking and Insurance framework.
