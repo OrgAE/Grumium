@@ -1,6 +1,6 @@
 # Grumium
 
-This is a startup project based on the ABP framework. For more information, visit <a href="https://abp.io/" target="_blank">abp.io</a>
+This is a startup project based on the Grumium and Abp Framework. For more information, visit <a href="https://french-coders.fr/" target="_blank">french-coders.fr</a>
 
 ## Development server
 

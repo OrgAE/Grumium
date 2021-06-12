@@ -65,7 +65,7 @@ namespace OrgAE.Grumium
                   });
 
              * See the documentation for more:
-             * https://docs.abp.io/en/abp/latest/Module-Entity-Extensions
+             * https://docs.french-coders.fr/en/abp/latest/Module-Entity-Extensions
              */
         }
     }

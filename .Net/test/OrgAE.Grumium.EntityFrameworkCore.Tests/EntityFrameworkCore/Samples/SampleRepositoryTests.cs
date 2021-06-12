@@ -10,7 +10,7 @@ using Xunit;
 namespace OrgAE.Grumium.EntityFrameworkCore.Samples
 {
     /* This is just an example test class.
-     * Normally, you don't test ABP framework code
+     * Normally, you don't test Grumium and Abp Framework code
      * (like default AppUser repository IRepository<AppUser, Guid> here).
      * Only test your custom repository methods.
      */
