@@ -21,7 +21,7 @@ An open source Banking and Insurance framework.
 
   ## Want to Contribute?
 
-Grumium is a community-driven open source project. See [the contribution guide]() if you want to be a part of this project.
+Grumium is a community-driven open source project. See [the contribution guide](CODE_OF_CONDUCT.md) if you want to be a part of this project.
 
 # Support the Grumium Framework
 
