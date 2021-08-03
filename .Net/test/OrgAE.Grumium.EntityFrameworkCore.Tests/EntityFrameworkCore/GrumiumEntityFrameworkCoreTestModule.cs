@@ -11,7 +11,7 @@ using Volo.Abp.Modularity;
 namespace OrgAE.Grumium.EntityFrameworkCore
 {
     [DependsOn(
-        typeof(GrumiumEntityFrameworkCoreDbMigrationsModule),
+        typeof(GrumiumEntityFrameworkCoreModule),
         typeof(GrumiumTestBaseModule),
         typeof(AbpEntityFrameworkCoreSqliteModule)
         )]
@@ -47,11 +47,11 @@ namespace OrgAE.Grumium.EntityFrameworkCore
             var connection = new SqliteConnection("Data Source=:memory:");
             connection.Open();
 
-            var options = new DbContextOptionsBuilder<GrumiumMigrationsDbContext>()
+            var options = new DbContextOptionsBuilder<GrumiumDbContext>()
                 .UseSqlite(connection)
                 .Options;
 
-            using (var context = new GrumiumMigrationsDbContext(options))
+            using (var context = new GrumiumDbContext(options))
             {
                 context.GetService<IRelationalDatabaseCreator>().CreateTables();
             }

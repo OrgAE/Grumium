@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\OrgAE.Grumium.EntityFrameworkCore.DbMigrations\OrgAE.Grumium.EntityFrameworkCore.DbMigrations.csproj" />
+    <ProjectReference Include="..\..\src\OrgAE.Grumium.EntityFrameworkCore\OrgAE.Grumium.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\OrgAE.Grumium.TestBase\OrgAE.Grumium.TestBase.csproj" />
-    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="4.3.2" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="4.4.0" />
   </ItemGroup>
 
   <ItemGroup>

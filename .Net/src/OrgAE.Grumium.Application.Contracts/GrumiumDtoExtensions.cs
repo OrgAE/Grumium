@@ -21,7 +21,7 @@ namespace OrgAE.Grumium
                  *   .AddOrUpdateProperty<IdentityRoleDto, string>("Title");
                  *
                  * See the documentation for more:
-                 * https://docs.french-coders.fr/en/abp/latest/Object-Extensions
+                 * https://docs.abp.io/en/abp/latest/Object-Extensions
                  */
             });
         }

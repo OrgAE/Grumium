@@ -7,18 +7,18 @@ namespace OrgAE.Grumium.EntityFrameworkCore
 {
     /* This class is needed for EF Core console commands
      * (like Add-Migration and Update-Database commands) */
-    public class GrumiumMigrationsDbContextFactory : IDesignTimeDbContextFactory<GrumiumMigrationsDbContext>
+    public class GrumiumDbContextFactory : IDesignTimeDbContextFactory<GrumiumDbContext>
     {
-        public GrumiumMigrationsDbContext CreateDbContext(string[] args)
+        public GrumiumDbContext CreateDbContext(string[] args)
         {
             GrumiumEfCoreEntityExtensionMappings.Configure();
 
             var configuration = BuildConfiguration();
 
-            var builder = new DbContextOptionsBuilder<GrumiumMigrationsDbContext>()
+            var builder = new DbContextOptionsBuilder<GrumiumDbContext>()
                 .UseSqlServer(configuration.GetConnectionString("Default"));
 
-            return new GrumiumMigrationsDbContext(builder.Options);
+            return new GrumiumDbContext(builder.Options);
         }
 
         private static IConfigurationRoot BuildConfiguration()

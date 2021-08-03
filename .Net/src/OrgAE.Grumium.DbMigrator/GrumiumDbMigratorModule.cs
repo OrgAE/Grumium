@@ -7,7 +7,7 @@ namespace OrgAE.Grumium.DbMigrator
 {
     [DependsOn(
         typeof(AbpAutofacModule),
-        typeof(GrumiumEntityFrameworkCoreDbMigrationsModule),
+        typeof(GrumiumEntityFrameworkCoreModule),
         typeof(GrumiumApplicationContractsModule)
         )]
     public class GrumiumDbMigratorModule : AbpModule

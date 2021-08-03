@@ -34,12 +34,12 @@ namespace OrgAE.Grumium.Samples
                 adminUser = await _identityUserRepository
                     .FindByNormalizedUserNameAsync("ADMIN");
 
-                await _identityUserManager.SetEmailAsync(adminUser, "newemail@french-coders.fr");
+                await _identityUserManager.SetEmailAsync(adminUser, "newemail@abp.io");
                 await _identityUserRepository.UpdateAsync(adminUser);
             });
 
             adminUser = await _identityUserRepository.FindByNormalizedUserNameAsync("ADMIN");
-            adminUser.Email.ShouldBe("newemail@french-coders.fr");
+            adminUser.Email.ShouldBe("newemail@abp.io");
         }
     }
 }

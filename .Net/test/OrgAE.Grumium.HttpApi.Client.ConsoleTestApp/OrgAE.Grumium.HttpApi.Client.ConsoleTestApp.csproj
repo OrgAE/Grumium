@@ -7,17 +7,19 @@
 
   <ItemGroup>
     <None Remove="appsettings.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="appsettings.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Remove="appsettings.secrets.json" />
+    <Content Include="appsettings.secrets.json">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Volo.Abp.Http.Client.IdentityModel" Version="4.3.2" />
+    <PackageReference Include="Volo.Abp.Http.Client.IdentityModel" Version="4.4.0" />
     <ProjectReference Include="..\..\src\OrgAE.Grumium.HttpApi.Client\OrgAE.Grumium.HttpApi.Client.csproj" />
   </ItemGroup>
 

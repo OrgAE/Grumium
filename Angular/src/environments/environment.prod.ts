@@ -10,15 +10,16 @@ export const environment = {
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: 'https://localhost:44315',
+    issuer: 'https://localhost:44382',
     redirectUri: baseUrl,
     clientId: 'Grumium_App',
     responseType: 'code',
     scope: 'offline_access Grumium',
+    requireHttps: true
   },
   apis: {
     default: {
-      url: 'https://localhost:44398',
+      url: 'https://localhost:44337',
       rootNamespace: 'OrgAE.Grumium',
     },
   },

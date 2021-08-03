@@ -3,6 +3,6 @@
   "texts": {
     "Menu:Home": "Domov",
     "Welcome": "Dobrodošli",
-    "LongWelcomeMessage": "Dobrodošli v aplikaciji. To je začetni projekt na osnovi okolja ABP. Za več informacij obiščite french-coders.fr."
+    "LongWelcomeMessage": "Dobrodošli v aplikaciji. To je začetni projekt na osnovi okolja ABP. Za več informacij obiščite abp.io."
   }
 }

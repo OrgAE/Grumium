@@ -20,14 +20,14 @@ namespace OrgAE.Grumium.EntityFrameworkCore
 
         public async Task MigrateAsync()
         {
-            /* We intentionally resolving the GrumiumMigrationsDbContext
+            /* We intentionally resolving the GrumiumDbContext
              * from IServiceProvider (instead of directly injecting it)
              * to properly get the connection string of the current tenant in the
              * current scope.
              */
 
             await _serviceProvider
-                .GetRequiredService<GrumiumMigrationsDbContext>()
+                .GetRequiredService<GrumiumDbContext>()
                 .Database
                 .MigrateAsync();
         }

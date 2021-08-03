@@ -1,8 +1,8 @@
 const ENV = {
   dev: {
-    apiUrl: 'http://localhost:44398',
+    apiUrl: 'http://localhost:44337',
     oAuthConfig: {
-      issuer: 'http://localhost:44315',
+      issuer: 'http://localhost:44382',
       clientId: 'Grumium_App',
       clientSecret: '1q2w3e*',
       scope: 'offline_access Grumium',
@@ -12,9 +12,9 @@ const ENV = {
     },
   },
   prod: {
-    apiUrl: 'http://localhost:44398',
+    apiUrl: 'http://localhost:44337',
     oAuthConfig: {
-      issuer: 'http://localhost:44315',
+      issuer: 'http://localhost:44382',
       clientId: 'Grumium_App',
       clientSecret: '1q2w3e*',
       scope: 'offline_access Grumium',
